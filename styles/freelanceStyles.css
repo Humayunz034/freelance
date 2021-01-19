@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #E1E1E1;
+}
+
+
+#wrapper {
+    border: medium solid #FFFFFF;
+	 background-color: #FFF;
+	margin: auto;
+    width: 1200px;
+}
+#banner {
+    background-color: #E4CABD;
+	border: medium solid #FFFFFF;
+    margin: auto;
+    height: 200px;
+    width: 1200px;
+}
+#nav {
+    background-color: #EDDAD3;
+    width: 1170px;
+	height: 100px;
+	margin: auto;
+}
+h1 {
+    font-size: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1px;
+
+}
+#Main {
+    background-color: #EDDAD3;
+    margin: auto;
+	width: 1170px;
+}
+#logo {
+    width: 200px;
+    float: left;
+}
+#name {
+    float: left;
+    margin-top: 75px;
+}
