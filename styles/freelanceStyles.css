@@ -5,44 +5,222 @@ body {
     background-color: #E1E1E1;
 }
 
-
+hr {
+ 
+	border: 2px solid white;
+}
 #wrapper {
-    border: medium solid #FFFFFF;
-	 background-color: #FFF;
-	margin: auto;
+    border: 10px solid #FFFFFF;
+    background-color: #FFF;
+    margin: auto;
     width: 1200px;
 }
 #banner {
     background-color: #E4CABD;
-	border: medium solid #FFFFFF;
-    margin: auto;
+    border: thin solid #FFFFFF;
     height: 200px;
-    width: 1200px;
-}
-#nav {
-    background-color: #EDDAD3;
-    width: 1170px;
-	height: 100px;
-	margin: auto;
-}
-h1 {
-    font-size: 70px;
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 1px;
-
-}
-#Main {
-    background-color: #EDDAD3;
-    margin: auto;
-	width: 1170px;
 }
 #logo {
     width: 200px;
     float: left;
 }
 #name {
-    float: left;
+    float: none;
     margin-top: 75px;
+	
+}
+
+#nav {
+
+	background-color: #EDDAD3;
+   	height: 100px;
+	clear: both;
+}
+
+
+#Main {
+    background-color: #EDDAD3;
+    min-height: 400px;
+
+}
+#footer {
+    background-color: #E4CABD;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1px;
+    text-align: center;	
+
+}
+
+h2 {
+
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 1px;
+    text-align: center;	
+	
+}
+
+ul { color: #FFFFFF;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;	
+}
+
+h3 {
+    color: #324D68;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+h4 {
+    color: #324D68;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;	
+}
+
+
+p {
+    color: #FFFFFF;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+/*Menu style*/
+
+.navmenu
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font: bold 10px 'Lato', sans-serif; /* use google custom font "Lato" */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navmenu li{
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 100px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+	
+	
+}
+
+.navmenu li a{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px; /* height of links */
+  padding: 0 10px;
+
+  position: relative;
+  overflow: hidden;
+  color: black;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-bottom: 8px solid rgba(0,0,0,.1);
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  /* 18 * 0.0555 = 1px */
+  letter-spacing: 0.0555em;
+  background: #88abc1; /* default background color */
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; /* center text horizontally */
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; /* center text vertically */
+  -webkit-transition: all .3s;
+  transition: all .3s;
+	color: white;
+}
+
+/* Create shimmering effect */
+.navmenu li a:after{
+  content: '';
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  background: white;
+  opacity: .5;
+  top: 0;
+  left: -50%;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+
+.navmenu li:nth-of-type(2) a{
+	color: white;
+  background: #88abc1;
+}
+
+.navmenu li:nth-of-type(3) a{
+	color: white;
+  background: #88abc1;
+}
+
+.navmenu li:nth-of-type(4) a{
+	color: white;
+  background: #88abc1;
+}
+
+.navmenu li:nth-of-type(5) a{
+	color: white;
+  background: #88abc1;
+}
+
+.navmenu li a:hover{
+  opacity: .7;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.navmenu li a:hover:after{
+  left: 150%;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.navmenu li a:active{
+  box-shadow: 0 -30px 10px rgba(255,255,255,.2) inset;
+  border-bottom-width: 0;
+  box-shadow: none;
+  border-top: 8px solid rgba(0,0,0,.1);
+  -webkit-transition: none;
+  transition: none;
+}
+a:link {
+    color: #88ABC1;
+    text-decoration: underline;
+}
+a:visited {
+    color: #18527C;
+}
+
+/*
+
+@media screen and (max-width:760px){
+  .navmenu li a{
+    font-size: 1.5em;
+  }
+  
 }
